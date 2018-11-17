@@ -1,0 +1,84 @@
+h2{
+    background-color: bisque;
+    color: black;
+}
+
+section{
+    margin-bottom: 1000px;
+}
+
+.container{
+    background-color: darkgray;
+    border: 10px solid lightcoral;
+    width: 90%;
+}
+
+.square{
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid rebeccapurple;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.first .square{
+    margin: 2px;
+}
+
+.flex{
+    display: flex;
+}
+
+.align, .align-content, .zad{
+    height: 100%;
+}
+
+.justify .square{
+    min-width: 100px;
+}
+
+.last{
+    order: 2;
+}
+
+.first{
+    order: -1;
+}
+
+.grow-big{
+    flex-grow: 2;
+}
+
+.red{
+    background-color: red;
+}
+
+.start{
+    align-self: flex-start;
+}
+
+.end{
+    align-self: flex-end;
+}
+
+.center{
+    align-self: center;
+}
+
+.align-self{
+    height: 300px;
+}
+
+.zad{
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.zad1{
+    margin-bottom: 100px;
+    height: 200px;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex - example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <section>
+        <h2>
+            No flex
+        </h2>
+        <div class="container first">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <h2>
+            Flex default
+        </h2>
+        <div class="container flex">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <h2>
+            flex-direction (default row)
+        </h2>
+        <div>
+            <button class="direction-button">row</button>
+            <button class="direction-button">row-reverse</button>
+            <button class="direction-button">column</button>
+            <button class="direction-button">column-reverse</button>
+        </div>
+        <div class="container flex directions">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section>
+        <h2>
+            flex-wrap
+        </h2>
+        <div>
+            <button class="wrap-button">nowrap</button>
+            <button class="wrap-button">wrap</button>
+            <button class="wrap-button">wrap-reverse</button>
+        </div>
+        <div class="container flex wrap">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section>
+        <h2>
+            justify-content
+        </h2>
+        <div>
+            <button class="justify-button">flex-start</button>
+            <button class="justify-button">flex-end</button>
+            <button class="justify-button">center</button>
+            <button class="justify-button">space-between</button>
+            <button class="justify-button">space-around</button>
+            <button class="justify-button">space-evenly</button>
+        </div>
+        <div class="container flex justify">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section>
+        <h2>
+            align-items
+        </h2>
+        <div>
+            <button class="align-button">flex-start</button>
+            <button class="align-button">flex-end</button>
+            <button class="align-button">center</button>
+            <button class="align-button">baseline</button>
+            <button class="align-button">stretch</button>
+        </div>
+        <div class="container flex align">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3
+                Lorem ipsum dolor sit
+            </div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">
+                Lorem ipsum dolor sit
+                6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section>
+        <h2>
+            flex-grow
+        </h2>
+        <div>
+            number
+        </div>
+        <div class="container flex grow">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square grow-big red">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section>
+        <h2>
+            align-self (on square)
+        </h2>
+        <div>
+            <button class="align-self-button">auto</button>
+            <button class="align-self-button">flex-start</button>
+            <button class="align-self-button">flex-end</button>
+            <button class="align-self-button">center</button>
+            <button class="align-self-button">baseline</button>
+            <button class="align-self-button">stretch</button>
+        </div>
+        <div class="container flex align-self">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square aling-self-square red">5</div>
+            <div class="square">6</div>
+            <div class="square">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <h2>
+            order (on square)
+        </h2>
+        <div>
+            -... -1 0 1 ...
+        </div>
+        <div class="container flex order">
+            <div class="square">1</div>
+            <div class="square last red">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square">6</div>
+            <div class="square first red">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section class="zad1">
+        <h2>
+           Zadanie
+        </h2>
+        <div>
+        </div>
+        <div class="container flex zad">
+            <div class="square center">1</div>
+            <div class="square last">2</div>
+            <div class="square start">3</div>
+            <div class="square">4</div>
+            <div class="square">5</div>
+            <div class="square end">6</div>
+            <div class="square first">7</div>
+            <div class="square">8</div>
+        </div>
+    </section>
+    <hr>
+
+    <section >
+        <h2>
+           Zadanie 2
+        </h2>
+        <div>
+        </div>
+        <div class="container flex zad col">
+            <div class="square center">1</div>
+            <div class="square">2</div>
+            <div class="square start">3</div>
+            <div class="square">4</div>
+            <div class="square end">5</div>
+            <div class="square first">6</div>
+        </div>
+    </section>
+    <hr>
+
+</body>
+
+</html>
